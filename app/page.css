@@ -1,0 +1,13 @@
+.main {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin-left: 300px;
+  padding: 20px;
+  background-color: #0071bd;
+}
+
+h1 {
+  color: #fff;
+  font-size: 70px;
+}

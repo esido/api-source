@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Big+Shoulders+Display&display=swap");
+
+.single-product-container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin-left: 300px;
+  padding: 20px;
+}
+
+.single-product-img {
+  width: 500px;
+}
+
+.single-product-img {
+  border-radius: 50px;
+  opacity: 0.9;
+  transition: 0.5s;
+}
+.single-product-title {
+  transition: transform 2s;
+  font-size: 60px;
+  color: white;
+  font-family: "Big Shoulders Display", cursive;
+}
+.single-product-card:hover > p {
+  opacity: 1;
+  transform: scale(1.5);
+  top: 80%;
+}
+
+.single-product-img,
+#parent {
+  cursor: pointer;
+}
+.single-product-card:hover > .single-product-img {
+  opacity: 1;
+  transform: scale(1.4);
+}
+.single-product-card .single-product-content {
+  position: absolute;
+
+  top: 120%;
+  left: 0%;
+  padding: 1px;
+  border-radius: 25px;
+  width: 450px;
+  height: 30px;
+  transition: all 0.5s;
+  opacity: 0;
+}
+.single-product-card:hover > .single-product-content {
+  opacity: 1;
+  width: 450px;
+  height: 30px;
+  transform: translateY(-120px);
+}
+
+.single-product-card {
+  transition: transform 0.7s;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  width: 450px;
+  height: 450px;
+}
+.single-product-card:hover {
+  transform: scale(1);
+}
+.single-product-container {
+  position: fixed;
+  top: 350px;
+  left: 600px;
+  transform: translate(-50%, -50%);
+}
+.single-product-price {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 25px;
+}
